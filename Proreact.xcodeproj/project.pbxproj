@@ -16,6 +16,16 @@
 		0D403D2224AF32B8007A1C8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D403D2024AF32B8007A1C8A /* LaunchScreen.storyboard */; };
 		0D403D2D24AF32B8007A1C8A /* ProreactTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D403D2C24AF32B8007A1C8A /* ProreactTests.swift */; };
 		0D403D3824AF32B9007A1C8A /* ProreactUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D403D3724AF32B9007A1C8A /* ProreactUITests.swift */; };
+		0D403D4924AF333F007A1C8A /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D403D4824AF333F007A1C8A /* TabBarView.swift */; };
+		0D403D4D24AF3446007A1C8A /* PlayIdleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D403D4C24AF3446007A1C8A /* PlayIdleView.swift */; };
+		0D403D4F24AF3456007A1C8A /* PlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D403D4E24AF3456007A1C8A /* PlayView.swift */; };
+		0D403D5124AF3461007A1C8A /* PlayGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D403D5024AF3461007A1C8A /* PlayGameView.swift */; };
+		0D403D5324AF346B007A1C8A /* PlayResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D403D5224AF346B007A1C8A /* PlayResultView.swift */; };
+		0D403D5524AF3475007A1C8A /* PlayzTooFastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D403D5424AF3475007A1C8A /* PlayzTooFastView.swift */; };
+		0D403D5724AF347E007A1C8A /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D403D5624AF347E007A1C8A /* HistoryView.swift */; };
+		0D9421DF24AF359C0032B9CD /* TimerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9421DE24AF359C0032B9CD /* TimerUtils.swift */; };
+		0D9421E124AF35AB0032B9CD /* RandomUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9421E024AF35AB0032B9CD /* RandomUtils.swift */; };
+		0D9421E424AF44CA0032B9CD /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9421E324AF44CA0032B9CD /* AboutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +61,16 @@
 		0D403D3324AF32B9007A1C8A /* ProreactUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProreactUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D403D3724AF32B9007A1C8A /* ProreactUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProreactUITests.swift; sourceTree = "<group>"; };
 		0D403D3924AF32B9007A1C8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D403D4824AF333F007A1C8A /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		0D403D4C24AF3446007A1C8A /* PlayIdleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayIdleView.swift; sourceTree = "<group>"; };
+		0D403D4E24AF3456007A1C8A /* PlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayView.swift; sourceTree = "<group>"; };
+		0D403D5024AF3461007A1C8A /* PlayGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayGameView.swift; sourceTree = "<group>"; };
+		0D403D5224AF346B007A1C8A /* PlayResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayResultView.swift; sourceTree = "<group>"; };
+		0D403D5424AF3475007A1C8A /* PlayzTooFastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayzTooFastView.swift; sourceTree = "<group>"; };
+		0D403D5624AF347E007A1C8A /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		0D9421DE24AF359C0032B9CD /* TimerUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerUtils.swift; sourceTree = "<group>"; };
+		0D9421E024AF35AB0032B9CD /* RandomUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUtils.swift; sourceTree = "<group>"; };
+		0D9421E324AF44CA0032B9CD /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +123,9 @@
 			children = (
 				0D403D1224AF32B5007A1C8A /* AppDelegate.swift */,
 				0D403D1424AF32B5007A1C8A /* SceneDelegate.swift */,
-				0D403D1924AF32B5007A1C8A /* ContentView.swift */,
+				0D403D4524AF32F8007A1C8A /* Views */,
+				0D403D4724AF3301007A1C8A /* Logic */,
+				0D403D4624AF32FD007A1C8A /* Helpers */,
 				0D403D1B24AF32B8007A1C8A /* Assets.xcassets */,
 				0D403D2024AF32B8007A1C8A /* LaunchScreen.storyboard */,
 				0D403D2324AF32B8007A1C8A /* Info.plist */,
@@ -137,6 +159,70 @@
 				0D403D3924AF32B9007A1C8A /* Info.plist */,
 			);
 			path = ProreactUITests;
+			sourceTree = "<group>";
+		};
+		0D403D4524AF32F8007A1C8A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0D403D4A24AF3434007A1C8A /* Game */,
+				0D403D4B24AF3439007A1C8A /* History */,
+				0D9421E224AF44BC0032B9CD /* About */,
+				0D403D5824AF349B007A1C8A /* App */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0D403D4624AF32FD007A1C8A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0D9421DE24AF359C0032B9CD /* TimerUtils.swift */,
+				0D9421E024AF35AB0032B9CD /* RandomUtils.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		0D403D4724AF3301007A1C8A /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		0D403D4A24AF3434007A1C8A /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				0D403D4E24AF3456007A1C8A /* PlayView.swift */,
+				0D403D4C24AF3446007A1C8A /* PlayIdleView.swift */,
+				0D403D5024AF3461007A1C8A /* PlayGameView.swift */,
+				0D403D5224AF346B007A1C8A /* PlayResultView.swift */,
+				0D403D5424AF3475007A1C8A /* PlayzTooFastView.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		0D403D4B24AF3439007A1C8A /* History */ = {
+			isa = PBXGroup;
+			children = (
+				0D403D5624AF347E007A1C8A /* HistoryView.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		0D403D5824AF349B007A1C8A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0D403D1924AF32B5007A1C8A /* ContentView.swift */,
+				0D403D4824AF333F007A1C8A /* TabBarView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		0D9421E224AF44BC0032B9CD /* About */ = {
+			isa = PBXGroup;
+			children = (
+				0D9421E324AF44CA0032B9CD /* AboutView.swift */,
+			);
+			path = About;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +356,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D403D5124AF3461007A1C8A /* PlayGameView.swift in Sources */,
+				0D9421DF24AF359C0032B9CD /* TimerUtils.swift in Sources */,
 				0D403D1824AF32B5007A1C8A /* Proreact.xcdatamodeld in Sources */,
+				0D403D4F24AF3456007A1C8A /* PlayView.swift in Sources */,
 				0D403D1324AF32B5007A1C8A /* AppDelegate.swift in Sources */,
+				0D403D5324AF346B007A1C8A /* PlayResultView.swift in Sources */,
+				0D403D5724AF347E007A1C8A /* HistoryView.swift in Sources */,
 				0D403D1A24AF32B5007A1C8A /* ContentView.swift in Sources */,
+				0D9421E424AF44CA0032B9CD /* AboutView.swift in Sources */,
+				0D403D4924AF333F007A1C8A /* TabBarView.swift in Sources */,
+				0D9421E124AF35AB0032B9CD /* RandomUtils.swift in Sources */,
+				0D403D4D24AF3446007A1C8A /* PlayIdleView.swift in Sources */,
+				0D403D5524AF3475007A1C8A /* PlayzTooFastView.swift in Sources */,
 				0D403D1524AF32B5007A1C8A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

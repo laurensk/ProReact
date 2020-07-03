@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  AboutView.swift
 //  Proreact
 //
 //  Created by Laurens on 03.07.20.
@@ -8,14 +8,14 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct AboutView: View {
     var body: some View {
-        Text("Hello, World!")
+        Text("Frag nicht was für About Screen...")
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct AboutView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        AboutView()
     }
 }
