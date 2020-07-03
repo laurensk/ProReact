@@ -20,20 +20,20 @@ struct TabBarView: View {
     
     var body: some View {
         TabView(selection: $selection) {
-            HistoryView()
-                .tabItem {
-                    Image(systemName: "timer").imageScale(.large)
-                    Text("History")
-            }.tag(Tabs.History)
+//            HistoryView()
+//                .tabItem {
+//                    Image(systemName: "timer").imageScale(.large)
+//                    Text("History")
+//            }.tag(Tabs.History)
             PlayView()
                 .tabItem {
                     Image(systemName: "gamecontroller.fill").imageScale(.large)
                     Text("Game")
             }.tag(Tabs.Play)
-            HistoryView()
+            MoreView()
                 .tabItem {
-                    Image(systemName: "info.circle").imageScale(.large)
-                    Text("About")
+                    Image(systemName: "ellipsis").imageScale(.large)
+                    Text("More")
             }.tag(Tabs.About)
         }
     }

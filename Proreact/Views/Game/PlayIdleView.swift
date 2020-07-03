@@ -13,13 +13,28 @@ struct PlayIdleView: View {
     @Binding var currentView: GameState
     
     var body: some View {
-        VStack {
-            Button(action: {
-                self.currentView = .Game
-            }) {
-                Text("Start Game")
+        ZStack {
+            VStack {
+                Spacer()
+                Spacer()
+                Image(systemName: "hand.draw.fill").resizable().scaledToFit().frame(width: 150).foregroundColor(Color.white).padding(.bottom, 30)
+                Text("Reaction Time Test").font(.system(size: 35, design: .rounded)).fontWeight(.bold).foregroundColor(Color.white)
+                Spacer()
+                Spacer()
+                Text("When the red box turns green, click as quickly as you can. Tap anywhere to start.").fontWeight(.semibold).multilineTextAlignment(.center).padding(.leading, 40).padding(.trailing, 40).foregroundColor(Color.white)
+                Spacer()
+                Spacer()
+                Spacer()
             }
-        }
+            HighscoreView()
+        }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
+            .background(Color("idleColor")).edgesIgnoringSafeArea(.all)
+            .highPriorityGesture(TapGesture().onEnded({ _ in self.tapGesture() }))
+    }
+    
+    func tapGesture() {
+        HapticTouchUtil.vibrate(style: .light)
+        self.currentView = .Game
     }
 }
 

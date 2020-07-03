@@ -33,6 +33,8 @@ struct PlayView: View {
             } else {
                 EmptyView()
             }
+        }.onAppear {
+            self.currentView = .Idle
         }
     }
 }

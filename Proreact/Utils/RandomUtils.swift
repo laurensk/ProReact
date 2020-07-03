@@ -11,7 +11,7 @@ import Foundation
 public class RandomUtils {
     
     public static func getRandomTime() -> Int {
-        return Int.random(in: 2000 ..< 7000)
+        return Int.random(in: 1000 ..< 10000)
     }
     
 }

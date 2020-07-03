@@ -10,7 +10,15 @@ import SwiftUI
 
 struct HistoryView: View {
     var body: some View {
-        Text("Frag nicht was für History...")
+        NavigationView {
+            VStack {
+                VStack {
+                    Text("History is loading...")
+                    Text("Or it may not be coded yet!")
+                }
+            }.navigationBarTitle("History")
+                .navigationViewStyle(StackNavigationViewStyle())
+        }
     }
 }
 
