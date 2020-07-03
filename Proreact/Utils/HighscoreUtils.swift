@@ -10,10 +10,19 @@ import Foundation
 
 public class HighscoreUtils {
     
-    static func getHighscore() -> Int {
+    static func getHighscore() -> String {
+        let defaults = UserDefaults.standard
+        let highscore = defaults.integer(forKey: "highscore")
+        if highscore <= 0 {
+            return "-"
+        } else {
+            return "\(highscore) ms"
+        }
+    }
+    
+    static func getHighscoreInt() -> Int {
         let defaults = UserDefaults.standard
         return defaults.integer(forKey: "highscore")
-        
     }
     
     static func setHighscore(ms: Int) {
@@ -22,7 +31,7 @@ public class HighscoreUtils {
     }
     
     static func checkForHighscore(ms: Int) {
-        if ms < getHighscore() {
+        if ms < getHighscoreInt() || getHighscoreInt() <= 0 {
             setHighscore(ms: ms)
         }
     }

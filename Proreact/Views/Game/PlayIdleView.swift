@@ -21,7 +21,7 @@ struct PlayIdleView: View {
                 Text("Reaction Time Test").font(.system(size: 35, design: .rounded)).fontWeight(.bold).foregroundColor(Color.white)
                 Spacer()
                 Spacer()
-                Text("When the red box turns green, click as quickly as you can. Tap anywhere to start.").fontWeight(.semibold).multilineTextAlignment(.center).padding(.leading, 40).padding(.trailing, 40).foregroundColor(Color.white)
+                Text("When the red screen turns green, tap as quickly as you can. Tap anywhere to start.").fontWeight(.semibold).multilineTextAlignment(.center).padding(.leading, 40).padding(.trailing, 40).foregroundColor(Color.white)
                 Spacer()
                 Spacer()
                 Spacer()
