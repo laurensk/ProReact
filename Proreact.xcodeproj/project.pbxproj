@@ -27,6 +27,7 @@
 		0D44574724AF6ADE00E735DC /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D44574624AF6ADE00E735DC /* Settings.swift */; };
 		0D55463E24AF6FAA00F7E0C6 /* HighscoreUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D55463D24AF6FAA00F7E0C6 /* HighscoreUtils.swift */; };
 		0D55464024AF707200F7E0C6 /* HighscoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D55463F24AF707200F7E0C6 /* HighscoreView.swift */; };
+		0D8BB42324B1267D003454D9 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D8BB42224B1267D003454D9 /* GameKit.framework */; };
 		0D9421DF24AF359C0032B9CD /* TimerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9421DE24AF359C0032B9CD /* TimerUtils.swift */; };
 		0D9421E124AF35AB0032B9CD /* RandomUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9421E024AF35AB0032B9CD /* RandomUtils.swift */; };
 		0D9421E424AF44CA0032B9CD /* MoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9421E324AF44CA0032B9CD /* MoreView.swift */; };
@@ -50,7 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0D403D0F24AF32B5007A1C8A /* Proreact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Proreact.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D403D0F24AF32B5007A1C8A /* ProReact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProReact.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D403D1224AF32B5007A1C8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D403D1424AF32B5007A1C8A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0D403D1724AF32B5007A1C8A /* Proreact.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Proreact.xcdatamodel; sourceTree = "<group>"; };
@@ -77,6 +78,7 @@
 		0D44574824AF6D2700E735DC /* Proreact.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Proreact.entitlements; sourceTree = "<group>"; };
 		0D55463D24AF6FAA00F7E0C6 /* HighscoreUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighscoreUtils.swift; sourceTree = "<group>"; };
 		0D55463F24AF707200F7E0C6 /* HighscoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighscoreView.swift; sourceTree = "<group>"; };
+		0D8BB42224B1267D003454D9 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		0D9421DE24AF359C0032B9CD /* TimerUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerUtils.swift; sourceTree = "<group>"; };
 		0D9421E024AF35AB0032B9CD /* RandomUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUtils.swift; sourceTree = "<group>"; };
 		0D9421E324AF44CA0032B9CD /* MoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreView.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D8BB42324B1267D003454D9 /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,13 +117,14 @@
 				0D403D2B24AF32B8007A1C8A /* ProreactTests */,
 				0D403D3624AF32B9007A1C8A /* ProreactUITests */,
 				0D403D1024AF32B5007A1C8A /* Products */,
+				0D8BB42124B1267D003454D9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		0D403D1024AF32B5007A1C8A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0D403D0F24AF32B5007A1C8A /* Proreact.app */,
+				0D403D0F24AF32B5007A1C8A /* ProReact.app */,
 				0D403D2824AF32B8007A1C8A /* ProreactTests.xctest */,
 				0D403D3324AF32B9007A1C8A /* ProreactUITests.xctest */,
 			);
@@ -223,6 +227,14 @@
 			path = App;
 			sourceTree = "<group>";
 		};
+		0D8BB42124B1267D003454D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D8BB42224B1267D003454D9 /* GameKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		0D9421E224AF44BC0032B9CD /* More */ = {
 			isa = PBXGroup;
 			children = (
@@ -248,7 +260,7 @@
 			);
 			name = Proreact;
 			productName = Proreact;
-			productReference = 0D403D0F24AF32B5007A1C8A /* Proreact.app */;
+			productReference = 0D403D0F24AF32B5007A1C8A /* ProReact.app */;
 			productType = "com.apple.product-type.application";
 		};
 		0D403D2724AF32B8007A1C8A /* ProreactTests */ = {
@@ -557,7 +569,7 @@
 				);
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.laurensk.Proreact;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ProReact;
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -581,7 +593,7 @@
 				);
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.laurensk.Proreact;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ProReact;
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
