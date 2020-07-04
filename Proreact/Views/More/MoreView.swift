@@ -79,8 +79,7 @@ struct MoreView: View {
                 }.listStyle(GroupedListStyle())
                     .environment(\.horizontalSizeClass, .regular)
             }.navigationBarTitle(Text("Settings & More"), displayMode: .inline)
-                .navigationViewStyle(StackNavigationViewStyle())
-        }
+        }.navigationViewStyle(StackNavigationViewStyle())
     }
     
     func openWebsite() {
