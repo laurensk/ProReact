@@ -43,7 +43,7 @@ struct MoreView: View {
                                 Image(systemName: "hand.draw.fill").resizable().scaledToFit().padding(.bottom, 4).foregroundColor(Color(UIColor.systemGray))
                                 Spacer()
                             }
-                            Text("Proreact").font(.system(size: 25, design: .rounded)).fontWeight(.bold)
+                            Text("ProReact").font(.system(size: 25, design: .rounded)).fontWeight(.bold)
                         }.padding()
                     }.frame(height: 200)
                     Section(header: Text("SETTINGS")) {
