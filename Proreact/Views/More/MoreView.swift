@@ -19,9 +19,16 @@ struct SettingsToggle {
             Settings.setSetting(setting: .VibrateWhenTap, value: vibrateWhenTap)
         }
     }
+    var syncHighscoreWithiCloud: Bool = Settings.getSetting(setting: .SyncHighscoreWithiCloud) {
+        didSet {
+            Settings.setSetting(setting: .SyncHighscoreWithiCloud, value: syncHighscoreWithiCloud)
+        }
+    }
 }
 
 struct MoreView: View {
+    
+    @Environment(\.colorScheme) var colorScheme
     
     @State var settings = SettingsToggle()
     
@@ -56,24 +63,38 @@ struct MoreView: View {
                                 }
                             }
                         }
+                        VStack {
+                            Toggle(isOn: $settings.syncHighscoreWithiCloud) {
+                                HStack {
+                                    Image(systemName: "icloud.circle")
+                                    Text("Sync highscore with iCloud")
+                                }
+                            }
+                        }
                     }
                     Section(header: Text("ABOUT")) {
                         List {
-                            HStack {
-                                Text("Developer")
-                                Spacer()
-                                Text("Laurens K.").foregroundColor(Color.gray)
-                            }.onTapGesture(perform: openWebsite)
-                            HStack {
-                                Text("Twitter")
-                                Spacer()
-                                Text("@laurensk").foregroundColor(Color.gray)
-                            }.onTapGesture(perform: openTwitter)
-                            HStack {
-                                Text("Contact")
-                                Spacer()
-                                Text("hello@laurensk.at").foregroundColor(Color.gray)
-                            }.onTapGesture(perform: openMail)
+                            Button(action: openWebsite) {
+                                HStack {
+                                    Text("Developer").foregroundColor(colorScheme == .dark ? Color.white : Color(UIColor.darkText))
+                                    Spacer()
+                                    Text("Laurens K.").foregroundColor(Color.gray)
+                                }
+                            }
+                            Button(action: openTwitter) {
+                                HStack {
+                                    Text("Twitter").foregroundColor(colorScheme == .dark ? Color.white : Color(UIColor.darkText))
+                                    Spacer()
+                                    Text("@laurensk").foregroundColor(Color.gray)
+                                }
+                            }
+                            Button(action: openMail) {
+                                HStack {
+                                    Text("Contact").foregroundColor(colorScheme == .dark ? Color.white : Color(UIColor.darkText))
+                                    Spacer()
+                                    Text("hello@laurensk.at").foregroundColor(Color.gray)
+                                }
+                            }
                         }
                     }
                 }.listStyle(GroupedListStyle())

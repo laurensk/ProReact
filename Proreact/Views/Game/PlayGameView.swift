@@ -80,7 +80,7 @@ struct PlayGameView: View {
             // stop up timer
             self.upTimer.upstream.connect().cancel()
             self.milliseconds = self.upTimePassed
-            HighscoreUtils.checkForHighscore(ms: self.milliseconds)
+            HighscoreUtils.hu.checkForHighscore(ms: self.milliseconds)
             HapticTouchUtil.vibrate(style: .light)
             self.currentView = .Result
         }
