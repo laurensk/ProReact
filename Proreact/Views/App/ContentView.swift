@@ -14,31 +14,12 @@ struct ContentView: View {
     @State private var sheetActive = false
     @State private var sheetSelected: Sheets = .More
     
+    @State private var showGameCenterError = false
+    
     var leaderboardButton: some View {
-        Button(action: {
-            
-            if GameCenterUtils.sharedInstance.gameCenterEnabled {
-                
-                let rootVC = UIApplication.shared.windows.first?.rootViewController
-                if let vc = GameCenterUtils.sharedInstance.gameCenterViewController {
-                    rootVC?.present(vc, animated: true, completion: nil)
-                }
-                
-            } else {
-                
-                print("game center not here - erroré")
-                
-            }
-            
-        
-        }) {
+        Button(action: presentLeaderboard) {
             Image(systemName: "chart.bar.fill").imageScale(.large)
         }
-    }
-    
-    func gameCenterViewControllerDidFinish(_ gameCenterViewController:
-        GKGameCenterViewController) {
-        gameCenterViewController.dismiss(animated: true, completion: nil)
     }
     
     var moreButton: some View {
@@ -55,7 +36,18 @@ struct ContentView: View {
             PlayView().navigationBarTitle("ProReact", displayMode: .inline)
                 .sheet(isPresented: $sheetActive, content: sheetContent)
                 .navigationBarItems(leading: leaderboardButton, trailing: moreButton)
+                .alert(isPresented: $showGameCenterError) {
+                    Alert(title: Text("Game Center disabled..."), message: Text("Enable Game Center in Settings to sync your highscore with all your devices and contribute to the leaderboard."), dismissButton: .default(Text("OK")))
+            }
         }.navigationViewStyle(StackNavigationViewStyle())
+    }
+    
+    func presentLeaderboard() {
+        if GameCenterUtils.sharedInstance.gameCenterEnabled {
+            GameCenterUtils.sharedInstance.presentGameCenterLeaderboard()
+        } else {
+            self.showGameCenterError.toggle()
+        }
     }
 }
 

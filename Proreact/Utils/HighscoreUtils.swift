@@ -18,7 +18,7 @@ public class HighscoreUtils {
     
     init() {
         self.localPlayer = GKLocalPlayer.local
-        self.leaderboardIdentifier = "com.laurensk.Proreact.h_debug_01"
+        self.leaderboardIdentifier = "com.laurensk.Proreact.Highscore"
     }
     
     // MARK: - HIGHSCORE VIEW HELPERS

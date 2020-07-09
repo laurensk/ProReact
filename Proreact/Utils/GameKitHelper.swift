@@ -56,12 +56,21 @@ open class GameCenterUtils: NSObject,  ObservableObject,  GKGameCenterController
             return nil }
         
         let gameCenterViewController = GKGameCenterViewController()
-        gameCenterViewController.leaderboardIdentifier = "com.laurensk.Proreact.h_debug_01"
+        gameCenterViewController.leaderboardIdentifier = "com.laurensk.Proreact.Highscore"
         gameCenterViewController.gameCenterDelegate = self
         gameCenterViewController.viewState = .leaderboards
         
         return gameCenterViewController
-        }}
+        
+        }
+    }
+    
+    public func presentGameCenterLeaderboard() {
+        let rootVC = UIApplication.shared.windows.first?.rootViewController
+        if let vc = GameCenterUtils.sharedInstance.gameCenterViewController {
+            rootVC?.present(vc, animated: true, completion: nil)
+        }
+    }
     
     open func gameCenterViewControllerDidFinish(_
         gameCenterViewController: GKGameCenterViewController) {

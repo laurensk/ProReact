@@ -21,11 +21,6 @@ struct TabBarView: View {
     
     var body: some View {
         TabView(selection: $selection) {
-            //            HistoryView()
-            //                .tabItem {
-            //                    Image(systemName: "timer").imageScale(.large)
-            //                    Text("History")
-            //            }.tag(Tabs.History)
             PlayView()
                 .tabItem {
                     Image(systemName: "gamecontroller.fill").imageScale(.large)
