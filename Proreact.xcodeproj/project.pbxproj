@@ -23,6 +23,7 @@
 		0D403D5324AF346B007A1C8A /* PlayResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D403D5224AF346B007A1C8A /* PlayResultView.swift */; };
 		0D403D5524AF3475007A1C8A /* PlayzTooFastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D403D5424AF3475007A1C8A /* PlayzTooFastView.swift */; };
 		0D403D5724AF347E007A1C8A /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D403D5624AF347E007A1C8A /* HistoryView.swift */; };
+		0D41C5B224B76AA500E5AD9A /* GameKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D41C5B124B76AA500E5AD9A /* GameKitHelper.swift */; };
 		0D44574524AF617D00E735DC /* HapticTouchUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D44574424AF617D00E735DC /* HapticTouchUtil.swift */; };
 		0D44574724AF6ADE00E735DC /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D44574624AF6ADE00E735DC /* Settings.swift */; };
 		0D55463E24AF6FAA00F7E0C6 /* HighscoreUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D55463D24AF6FAA00F7E0C6 /* HighscoreUtils.swift */; };
@@ -74,6 +75,7 @@
 		0D403D5224AF346B007A1C8A /* PlayResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayResultView.swift; sourceTree = "<group>"; };
 		0D403D5424AF3475007A1C8A /* PlayzTooFastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayzTooFastView.swift; sourceTree = "<group>"; };
 		0D403D5624AF347E007A1C8A /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		0D41C5B124B76AA500E5AD9A /* GameKitHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameKitHelper.swift; sourceTree = "<group>"; };
 		0D44574424AF617D00E735DC /* HapticTouchUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticTouchUtil.swift; sourceTree = "<group>"; };
 		0D44574624AF6ADE00E735DC /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		0D44574824AF6D2700E735DC /* Proreact.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Proreact.entitlements; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 				0D44574424AF617D00E735DC /* HapticTouchUtil.swift */,
 				0D44574624AF6ADE00E735DC /* Settings.swift */,
 				0D55463D24AF6FAA00F7E0C6 /* HighscoreUtils.swift */,
+				0D41C5B124B76AA500E5AD9A /* GameKitHelper.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -379,6 +382,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D403D5124AF3461007A1C8A /* PlayGameView.swift in Sources */,
+				0D41C5B224B76AA500E5AD9A /* GameKitHelper.swift in Sources */,
 				0D9421DF24AF359C0032B9CD /* TimerUtils.swift in Sources */,
 				0D403D1824AF32B5007A1C8A /* Proreact.xcdatamodeld in Sources */,
 				0D403D4F24AF3456007A1C8A /* PlayView.swift in Sources */,

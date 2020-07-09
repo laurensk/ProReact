@@ -11,7 +11,6 @@ import Foundation
 enum SettingProperties: String {
     case EnableHapticFeedback = "enableHapticFeedback"
     case VibrateWhenTap = "vibrateWhenTap"
-    case SyncHighscoreWithiCloud = "syncHighscoreWithiCloud"
 }
 
 public class Settings {

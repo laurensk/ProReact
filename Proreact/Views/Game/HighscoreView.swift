@@ -14,8 +14,8 @@ struct HighscoreView: View {
             Spacer()
             HStack {
                 Text("Highscore:").fontWeight(.semibold).foregroundColor(Color.white).lineLimit(1)
-                Text("\(HighscoreUtils.hu.getHighscore())").fontWeight(.bold).foregroundColor(Color.white).lineLimit(1)
-            }.padding(.bottom, 140)
+                Text("\(HighscoreUtils.hu.getHighscoreString())").fontWeight(.bold).foregroundColor(Color.white).lineLimit(1)
+            }.padding(.bottom, 120)
         }
     }
 }

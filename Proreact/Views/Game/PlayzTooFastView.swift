@@ -16,7 +16,7 @@ struct PlayzTooFastView: View {
         ZStack {
             VStack {
                 Image(systemName: "clear.fill").resizable().scaledToFit().frame(width: 150).foregroundColor(Color.white).padding(.bottom, 40)
-                Text("Too soon!").font(.system(size: 65, design: .rounded)).fontWeight(.bold).foregroundColor(Color.white).padding(.bottom, 250)
+                Text("Too soon!").font(.system(size: 65, design: .rounded)).fontWeight(.bold).foregroundColor(Color.white).padding(.bottom, 200)
             }
             HighscoreView()
         }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)

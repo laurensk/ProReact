@@ -19,18 +19,22 @@ struct SettingsToggle {
             Settings.setSetting(setting: .VibrateWhenTap, value: vibrateWhenTap)
         }
     }
-    var syncHighscoreWithiCloud: Bool = Settings.getSetting(setting: .SyncHighscoreWithiCloud) {
-        didSet {
-            Settings.setSetting(setting: .SyncHighscoreWithiCloud, value: syncHighscoreWithiCloud)
-        }
-    }
 }
 
 struct MoreView: View {
     
     @Environment(\.colorScheme) var colorScheme
+    @Environment(\.presentationMode) var presentationMode
     
     @State var settings = SettingsToggle()
+    
+    var dismissButton: some View {
+        Button(action: {
+            self.presentationMode.wrappedValue.dismiss()
+        }) {
+            Text("Done").fontWeight(.semibold)
+        }
+    }
     
     var body: some View {
         NavigationView {
@@ -63,14 +67,6 @@ struct MoreView: View {
                                 }
                             }
                         }
-                        VStack {
-                            Toggle(isOn: $settings.syncHighscoreWithiCloud) {
-                                HStack {
-                                    Image(systemName: "icloud.circle")
-                                    Text("Sync highscore with iCloud")
-                                }
-                            }
-                        }
                     }
                     Section(header: Text("ABOUT")) {
                         List {
@@ -100,6 +96,7 @@ struct MoreView: View {
                 }.listStyle(GroupedListStyle())
                     .environment(\.horizontalSizeClass, .regular)
             }.navigationBarTitle(Text("Settings & More"), displayMode: .inline)
+                .navigationBarItems(trailing: dismissButton)
         }.navigationViewStyle(StackNavigationViewStyle())
     }
     

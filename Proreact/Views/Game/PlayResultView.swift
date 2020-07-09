@@ -17,7 +17,7 @@ struct PlayResultView: View {
         ZStack {
             VStack {
                 Image(systemName: "timer").resizable().scaledToFit().frame(width: 150).foregroundColor(Color.white).padding(.bottom, 30)
-                Text("\(milliseconds) ms").font(.system(size: 65, design: .rounded)).fontWeight(.bold).foregroundColor(Color.white).padding(.bottom, 250)
+                Text("\(milliseconds) ms").font(.system(size: 65, design: .rounded)).fontWeight(.bold).foregroundColor(Color.white).padding(.bottom, 200)
             }
             HighscoreView()
         }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)

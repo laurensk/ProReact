@@ -24,7 +24,6 @@ struct PlayIdleView: View {
                 Text("When the red screen turns green, tap as quickly as you can. Tap anywhere to start.").fontWeight(.semibold).multilineTextAlignment(.center).padding(.leading, 40).padding(.trailing, 40).foregroundColor(Color.white)
                 Spacer()
                 Spacer()
-                Spacer()
             }
             HighscoreView()
         }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)

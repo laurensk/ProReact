@@ -33,12 +33,12 @@ struct PlayGameView: View {
                 if game == .Waiting {
                     VStack {
                         Image(systemName: "ellipsis").resizable().scaledToFit().frame(width: 150).foregroundColor(Color.white).padding(.bottom, 40)
-                        Text("Wait...").font(.system(size: 65, design: .rounded)).fontWeight(.bold).foregroundColor(Color.white).padding(.bottom, 250)
+                        Text("Wait...").font(.system(size: 65, design: .rounded)).fontWeight(.bold).foregroundColor(Color.white).padding(.bottom, 200)
                     }
                 } else {
                     VStack {
                         Image(systemName: "ellipsis").resizable().scaledToFit().frame(width: 150).foregroundColor(Color.white).padding(.bottom, 40)
-                        Text("Tap!").font(.system(size: 65, design: .rounded)).fontWeight(.bold).foregroundColor(Color.white).padding(.bottom, 250)
+                        Text("Tap!").font(.system(size: 65, design: .rounded)).fontWeight(.bold).foregroundColor(Color.white).padding(.bottom, 200)
                     }
                 }
             }
